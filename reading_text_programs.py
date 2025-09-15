@@ -4,6 +4,7 @@
 # Average word length
 # Most common word(s) and their frequency
 
+# Word Count Function
 with open("input.txt", "r") as f:
     text = f.read()
 
@@ -12,3 +13,9 @@ def count_words(words):
     return len(words)
 
 print(count_words(text))
+
+def count_unique_words(words):
+    unique_word_count = words.split()
+    return len(set(unique_word_count))
+
+print(count_unique_words(text))
