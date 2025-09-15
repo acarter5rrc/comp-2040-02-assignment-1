@@ -39,7 +39,7 @@ print(count_characters_no_spaces(text))
 
 # Average word length
 
-print(count_characters_no_spaces(text)/count_words(text))
+print(f"{count_characters_no_spaces(text)/count_words(text):.1f}")
 
 # Most common word(s) and their frequency
 
