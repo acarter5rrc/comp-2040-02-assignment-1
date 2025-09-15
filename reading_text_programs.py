@@ -5,6 +5,8 @@
 # Most common word(s) and their frequency
 
 # Word Count Function
+from collections import Counter
+
 with open("input.txt", "r") as f:
     text = f.read()
 
@@ -38,3 +40,12 @@ print(count_characters_no_spaces(text))
 # Average word length
 
 print(count_characters_no_spaces(text)/count_words(text))
+
+# Most common word(s) and their frequency
+
+def most_common(words):
+    words = words.split()
+    top_word = Counter(words)
+    return top_word.most_common(1)
+
+print(most_common(text))
