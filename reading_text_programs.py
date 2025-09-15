@@ -49,3 +49,12 @@ def most_common(words):
     return top_word.most_common(1)
 
 print(most_common(text))
+
+with open("output.txt", "w") as f:
+    f.write(f"Word count: {count_words(text)}\n")
+    f.write(f"Unique words: {count_unique_words(text)}\n")
+    f.write(f"Characters (with spaces): {count_characters(text)}\n")
+    f.write(f"Characters (no spaces): {count_characters_no_spaces(text)}\n")
+    f.write(f"Average word length: {count_characters_no_spaces(text)/count_words(text):.1f}\n")
+    word, freq = most_common(text)[0]
+    f.write(f"Most common word(s): {word} ({freq})\n")

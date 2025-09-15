@@ -1,0 +1,6 @@
+Word count: 262
+Unique words: 41
+Characters (with spaces): 262
+Characters (no spaces): 218
+Average word length: 0.8
+Most common word(s): were (3)
