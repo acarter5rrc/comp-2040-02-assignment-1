@@ -6,3 +6,9 @@
 
 with open("input.txt", "r") as f:
     text = f.read()
+
+def count_words(words):
+    word_count = words.split()
+    return len(words)
+
+print(count_words(text))
