@@ -1,8 +1,8 @@
-# Word count
-# Unique word count
-# Character count (with and without spaces)
-# Average word length
-# Most common word(s) and their frequency
+"""
+There were 5 categories and I made each function for each step.
+Then at the very end, I have the block of code that made the output doccument.
+I did not make changes to fix my code but I hope to someday.
+"""
 
 # Word Count Function
 from collections import Counter
