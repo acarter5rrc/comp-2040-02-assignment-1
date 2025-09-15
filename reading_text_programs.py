@@ -35,3 +35,6 @@ def count_characters_no_spaces(words):
 
 print(count_characters_no_spaces(text))
 
+# Average word length
+
+print(count_characters_no_spaces(text)/count_words(text))
